@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewController">
+   <children>
+      <Button fx:id="btCadastroVW" layoutX="776.0" layoutY="430.0" mnemonicParsing="false" onAction="#onBtCadastrarAction" opacity="0.74" prefHeight="36.0" prefWidth="92.0" text="Cadastrar">
+         <effect>
+            <Glow />
+         </effect></Button>
+      <Label layoutX="726.0" layoutY="272.0" prefHeight="17.0" prefWidth="79.0" text="Login" />
+      <Label layoutX="726.0" layoutY="347.0" prefHeight="17.0" prefWidth="79.0" text="Senha" />
+      <PasswordField fx:id="txtSenhaCadastro" layoutX="726.0" layoutY="373.0" prefWidth="195.0" promptText="senha" />
+      <TextField fx:id="txtLoginCadastro" layoutX="724.0" layoutY="309.0" prefHeight="26.0" prefWidth="195.0" promptText="Login">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblCadastroInvalido" alignment="CENTER" layoutX="726.0" layoutY="517.0" prefHeight="17.0" prefWidth="195.0" textAlignment="CENTER" />
+   </children>
+</AnchorPane>
